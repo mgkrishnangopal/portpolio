@@ -1,0 +1,178 @@
+*{  
+    margin: 0;
+    padding :  0;
+    font-family: 'Segoe UI',  sans-serif;
+    cursor: pointer;
+}
+
+.header{
+    background-image: url(./assests/image4.jpg);
+    height: 90vh;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.navigation ul{
+    display: flex;
+ list-style:none ;
+ text-decoration: none;
+ justify-content: space-around;
+
+}
+.navigation ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+    padding: 10px
+    
+}
+.navigation ul a{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.navigation ul button{
+font-weight: bolder;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    
+}
+.header h1{
+    font-weight: bolder;
+    font-size: 50px;
+    position: relative;
+    margin-left: 150px; 
+    color: white;
+    text-shadow: 10px 3px 3px rgba(255, 0, 0, 0.466);
+}
+header h2{
+    
+    font-weight: bolder;
+    font-size: 50px;
+    position: relative;
+    margin-left: 400px;  
+    color:white;
+    text-shadow: 10px 3px 3px rgba(255, 0, 0, 0.466);
+}
+
+.header p{
+    color: antiquewhite;
+    padding: 50px 0px 30px 0px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 700px;
+    margin-left: 500px;
+    font-size: 20px;
+}
+b,h3{
+    color: red;
+}
+.skills{
+   /* background-color: darkkhaki;*/
+   background-image: url(./assests/image4.jpg);
+    text-align: center;
+padding-top: 15px;
+width: 100%;
+height: 60vh;
+display: grid;
+place-items: center;
+position: relative;
+}
+.container{
+    display: flex;
+    margin: 50px;
+    gap: 80px;
+    animation: scroll 15s linear infinite;
+}
+hr{
+margin-top: 3px;
+margin-bottom: 3px;
+}
+.card{
+    color: antiquewhite;
+    border-radius: 30%;
+    min-width: 300px;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.card:nth-child(odd){
+    background: linear-gradient(-270deg,rgb(44, 139, 0),red);
+}
+.card:nth-child(even){
+    background: linear-gradient(-270deg,red,rgb(139, 0, 104));
+}
+@keyframes scroll{
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translatex(calc(-200px*5));
+    }
+}
+
+.main{
+    width: 100%;
+height: 70vh;
+background-image: url(./assests/image4.jpg);
+}
+
+.main ul{
+    text-align: end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.main ul a{
+    color: rgb(194, 247, 5);
+
+}
+.contact{
+    background-image: url(./assests/image4.jpg);
+    width: 100%;
+    height: 50vh;
+}
+.contact ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+padding : 50px;
+align-items: center;
+}
+.contact a{
+    font-size: 300%;
+    
+}
+.contact img{
+    width: 70px;
+    padding-right: 10px;
+}
+.contact textarea{
+    margin-left: 25%;
+}
+form{
+    background-color: darkgray;
+    color: blue;
+}
+#send{
+    background-color: red;
+    color: white;
+    border: 1px solid rgb(23, 168, 72);
+    border-radius: 60%;
+    padding: 10px 20px ;
+    margin-left: 70%;
+}
